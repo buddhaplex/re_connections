@@ -1,11 +1,16 @@
-const express = require("express");
-const mongoose = require("mongoose");
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
 users = require("./routes/api/users");
 profile = require("./routes/api/profile");
 posts = require("./routes/api/posts");
 
 const app = express();
+
+// body parser middleware
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 // db config
 const db = require("./config/keys").mongoURI;
