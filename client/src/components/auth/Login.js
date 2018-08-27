@@ -9,13 +9,12 @@ class Login extends Component {
       errors: {}
     };
 
-    this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
   on
 
-  onChange(e) {
+  onChange = (e) => {
     this.setState({[e.target.name]: e.target.value});
   } 
 

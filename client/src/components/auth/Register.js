@@ -11,13 +11,12 @@ class Register extends Component {
       errors: {}
     };
 
-    this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  onChange(e) {
+  onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
-  }
+  };
 
   onSubmit(e) {
     e.preventDefault();
