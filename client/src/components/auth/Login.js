@@ -12,18 +12,18 @@ class Login extends Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  on
+  on;
 
-  onChange = (e) => {
-    this.setState({[e.target.name]: e.target.value});
-  } 
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
   onSubmit(e) {
     e.preventDefault();
 
     const user = {
       email: this.state.email,
-      password: this.state.password,
+      password: this.state.password
     };
 
     console.log(user);
