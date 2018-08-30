@@ -8,7 +8,7 @@ class Navbar extends Component {
   onLogoutClick(e) {
     e.preventDefault();
     this.props.logoutUser();
-  }
+  };
 
   render() {
     const { isAuthenticated, user } = this.props.auth;
@@ -16,16 +16,14 @@ class Navbar extends Component {
     const authLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <a
-            href=""
+          <a href=""
             onClick={this.onLogoutClick.bind(this)}
-            className="nav-link"
-          >
+            className="nav-link">
             <img
               className="rounded-circle"
               src={user.avatar}
               alt={user.name}
-              style={{ width: '25px', marginRight: '5px' }}
+              style={{ width: '55px', marginRight: '5px' }}
               title="You must have a Gravatar connected to your email to display an image"
             />{' '}
             Logout
@@ -53,7 +51,7 @@ class Navbar extends Component {
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            DevConnector
+            RE:Connections
           </Link>
           <button
             className="navbar-toggler"
@@ -69,7 +67,7 @@ class Navbar extends Component {
               <li className="nav-item">
                 <Link className="nav-link" to="/profiles">
                   {' '}
-                  Developers
+                  Network
                 </Link>
               </li>
             </ul>
