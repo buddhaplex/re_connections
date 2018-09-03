@@ -4,7 +4,7 @@ import {
   GET_PROFILE,
   PROFILE_LOADING,
   CLEAR_CURRENT_PROFILE,
-  GET_ERRORS, 
+  GET_ERRORS,
   SET_CURRENT_USER
 } from "./types";
 
@@ -65,6 +65,19 @@ export const setProfileLoading = () => {
   return {
     type: PROFILE_LOADING
   };
+};
+
+// Add experience
+export const addExperience = (expData, history) => dispatch => {
+  axios
+    .post("/api/profile/experience", expData)
+    .then(res => history.push("/dashboard"))
+    .catch(err =>
+      dispatch({
+        type: GET_ERRORS,
+        payload: err.response.data
+      })
+    );
 };
 
 // Clear Profile
