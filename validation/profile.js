@@ -6,7 +6,7 @@ module.exports = function validateProfileInput(data) {
 
   data.handle = !isEmpty(data.handle) ? data.handle : "";
   data.status = !isEmpty(data.status) ? data.status : "";
-  data.skills = !isEmpty(data.skills) ? data.skills : "";
+  data.services = !isEmpty(data.services) ? data.services : "";
 
   if (!Validator.isLength(data.handle, { min: 2, max: 40 })) {
     errors.handle = "Handle must be between 2 and 40 characters";
@@ -20,8 +20,8 @@ module.exports = function validateProfileInput(data) {
     errors.status = "Status field cannot be empty.";
   }
 
-  if (Validator.isEmpty(data.skills)) {
-    errors.skills = "Skills field cannot be empty.";
+  if (Validator.isEmpty(data.services)) {
+    errors.services = "Services field cannot be empty.";
   }
 
   if (!isEmpty(data.website)) {

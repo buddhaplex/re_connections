@@ -126,9 +126,9 @@ router.post(
     if (req.body.location) profileFields.location = req.body.location;
     if (req.body.status) profileFields.status = req.body.status;
     if (req.body.bio) profileFields.bio = req.body.bio;
-    // skills, but need to split into an array
-    if (typeof req.body.skills !== "undefined") {
-      profileFields.skills = req.body.skills.split(",");
+    // services, but need to split into an array
+    if (typeof req.body.services !== "undefined") {
+      profileFields.services = req.body.services.split(",");
     }
 
     // Social
