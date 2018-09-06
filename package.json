@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "real estate community networks",
   "main": "server.js",
+  "engines": {
+    "node": "10.7.0"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
@@ -24,7 +27,6 @@
     "mongoose": "^5.2.6",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "semantic-ui-react": "^0.82.3",
     "validator": "^10.5.0"
   },
   "devDependencies": {
