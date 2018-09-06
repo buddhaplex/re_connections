@@ -1,4 +1,5 @@
 const express = require("express");
+
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
@@ -18,12 +19,16 @@ const db = require("./config/keys").mongoURI;
 
 // connect to MongoDB
 mongoose
-  .connect(db)
+  .connect(
+    db,
+    { useNewUrlParser: true }
+  )
   .then(res => console.log("MongoDB is connected!"))
   .catch(err => console.log(err));
 
 // Passport middleware
 app.use(passport.initialize());
+app.use(passport.session());
 
 // Passport Config
 require("./config/passport")(passport);

@@ -31,7 +31,7 @@ class ProfileHeader extends Component {
                     href={profile.website}
                     target="_blank"
                   >
-                    <i className="fas fa-code fa-2x" />
+                    <i className="fas fa-globe-americas fa-2x" />
                   </a>
                 )}
 

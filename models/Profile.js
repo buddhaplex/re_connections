@@ -26,7 +26,7 @@ const ProfileSchema = new Schema({
     required: true
   },
   services: {
-    type: String,
+    type: [String],
     required: true
   },
   bio: {
