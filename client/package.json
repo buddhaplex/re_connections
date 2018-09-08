@@ -15,17 +15,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0",
-    "jquery": "1.9.1 - 3"
-  },
-  "now": {
-    "alias": "class-demo",
-    "name": "class-demo",
-    "env": {
-      "PORT": "8000",
-      "SECRET": "@secret",
-      "DB": "@db"
-    }
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
