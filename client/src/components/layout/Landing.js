@@ -16,8 +16,8 @@ class Landing extends Component {
         <div className="dark-overlay landing-inner text-light">
           <div className="container">
             <div className="row">
-              <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">RE/Connections</h1>
+              <div className="lead col-md-12 text-center">
+                <h2 className="display-3 mb-4">RE / Connections</h2>
                 <p className="lead">
                   Join a community of real estate professionals and build your business along with your network.
                 </p>
