@@ -20,6 +20,15 @@
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.82.3"
   },
+  "now": {
+    "alias": "class-demo",
+    "name": "class-demo",
+    "env": {
+      "PORT": "8000",
+      "SECRET": "@secret",
+      "DB": "@db"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
