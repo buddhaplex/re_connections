@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import isEmpty from "../../validation/is-empty";
 
-
 class ProfileHeader extends Component {
   render() {
     const { profile } = this.props;
@@ -12,7 +11,11 @@ class ProfileHeader extends Component {
           <div className="card card-body bg-dark text-light mb-3">
             <div className="row">
               <div className="col-4 col-md-3 m-auto">
-                <img src={profile.user.avatar} alt="" className="rounded-circle" />
+                <img
+                  src={profile.user.avatar}
+                  alt=""
+                  className="rounded-circle"
+                />
               </div>
             </div>
             <div className="text-center">
@@ -31,7 +34,7 @@ class ProfileHeader extends Component {
                     href={profile.website}
                     target="_blank"
                   >
-                    <i className="fas fa-globe-americas fa-2x" />
+                    <i className="far fa-address-card fa-2x" />
                   </a>
                 )}
 
